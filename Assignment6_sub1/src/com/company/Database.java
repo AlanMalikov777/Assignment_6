@@ -4,11 +4,6 @@ public class Database {
     private static Database instance;
     public String value;
     private Database(String value){
-        try {
-            Thread.sleep(1000);//slow initialization.
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        }
         this.value= value;
     }
     public static Database getInstance(String value){
